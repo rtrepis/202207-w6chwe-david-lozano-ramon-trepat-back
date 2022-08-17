@@ -1,11 +1,7 @@
-import { NextFunction, Request, Response } from "express";
-import { JwtPayload } from "jsonwebtoken";
+import { NextFunction, Response } from "express";
 import createCustomError from "../../../utils/errors";
 import { verifyToken } from "../../../utils/userAuth/userAuth";
-
-interface CustomRequest extends Request {
-  payload: JwtPayload;
-}
+import { CustomRequest } from "../../types/loginTypes";
 
 const userAuthentification = (
   req: CustomRequest,

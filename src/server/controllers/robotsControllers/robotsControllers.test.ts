@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import Robot from "../../database/models/Robot";
-import createCustomError from "../../utils/errors";
+import Robot from "../../../database/models/Robot";
+import createCustomError from "../../../utils/errors";
 import { deleteRobot, getRobots } from "./robotsControllers";
 
 describe("Given a controller", () => {

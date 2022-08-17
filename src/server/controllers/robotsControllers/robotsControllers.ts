@@ -1,8 +1,8 @@
 import Debug from "debug";
 import chalk from "chalk";
 import { NextFunction, Request, Response } from "express";
-import Robot from "../../database/models/Robot";
-import createCustomError from "../../utils/errors";
+import Robot from "../../../database/models/Robot";
+import createCustomError from "../../../utils/errors";
 
 const debug = Debug("robots:server:controllers:robotsController");
 
